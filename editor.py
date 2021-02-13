@@ -178,8 +178,8 @@ class Editor(QtWidgets.QGraphicsView):
         gray = cv2.cvtColor(mask, cv2.COLOR_RGB2GRAY)
         (_, bw) = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 
-        print('mask.shape:',bw.shape)
-        print('mask dtype:', bw.dtype)
+        # print('mask.shape:',bw.shape)
+        # print('mask dtype:', bw.dtype)
         cv2.imwrite('mask.png', bw)
         if self.first_time:
             self._previous_mask = bw
@@ -208,8 +208,8 @@ class Editor(QtWidgets.QGraphicsView):
             # cv2.rectangle(mask, (x, y), (x + w, y + h), (36,255,12), 2)
             bw = bw[y:y+h,x:x+w]
 
-            print('mask.shape:',bw.shape)
-            print('mask dtype:', bw.dtype)
+            # print('mask.shape:',bw.shape)
+            # print('mask dtype:', bw.dtype)
             cv2.imwrite('current_mask.png', bw)
             tess_img = Image.fromarray(bw)
             tc = self.tessConfig[self._method]
