@@ -92,79 +92,7 @@ font-family : &quot;Source Serif Pro SemiBold&quot;;
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="1" column="0" colspan="17">
-        <widget class="QFrame" name="view_frame">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>969</width>
-           <height>573</height>
-          </size>
-         </property>
-         <property name="mouseTracking">
-          <bool>true</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QScrollBar{
-background: rgb(0, 170, 255);
-}
-</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::NoFrame</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Plain</enum>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="14">
-        <widget class="QPushButton" name="inpaint_button">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="toolTip">
-          <string>press here to inpaint the marked area</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-border-image: url(:/icons/done_icon.png) 1 1 1 1;
-border-radius: 10px;
-background-color:qradialgradient(spread:repeat, cx:1, cy:0, radius:1.799, fx:0.624, fy:0.403, stop:0 rgba(0, 210, 255, 255), stop:0.642045 rgba(48, 59, 207, 255));
-}
-QPushButton:hover{
-background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 2, 102, 255), stop:1 rgba(0, 170, 255, 255));
-}
-QPushButton:pressed{
-background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 29, 90, 255), stop:1 rgba(0, 105, 158, 255));
-}</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="14">
+       <item row="0" column="16">
         <widget class="QPushButton" name="min_button">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -216,8 +144,8 @@ background-color:rgba(85, 170, 255, 55)
          </property>
         </widget>
        </item>
-       <item row="0" column="16">
-        <widget class="QPushButton" name="back_button">
+       <item row="0" column="17">
+        <widget class="QPushButton" name="max_button">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -238,8 +166,8 @@ background-color:rgba(85, 170, 255, 55)
          </property>
          <property name="font">
           <font>
-           <family>Droid Sans Fallback</family>
-           <pointsize>10</pointsize>
+           <family>Source Serif Pro SemiBold</family>
+           <pointsize>14</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -250,25 +178,95 @@ background-color:rgba(85, 170, 255, 55)
          <property name="styleSheet">
           <string notr="true">QPushButton{
 border-radius: 10px;
-color: rgb(204,0,0);
-background-color: rgb(204, 0, 0);
+color: rgb(255, 191, 0);
+background-color: rgb(255, 191, 0);
 }
 QPushButton:hover{
-color:rgb(204, 0, 0);
-background-color:rgba(204, 0, 0, 150)
+color:rgb(255, 191, 0);
+background-color:rgba(255, 191, 0, 150)
 }
 QPushButton:pressed{
-color: rgba(204, 0, 0, 55);
-background-color:rgba(204, 0, 0, 55)
+color:rgba(255, 191, 0, 55);
+background-color:rgba(255, 191, 0, 55);
 }
 </string>
          </property>
          <property name="text">
-          <string>X</string>
+          <string>¤</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="13">
+       <item row="2" column="0">
+        <widget class="QLabel" name="title_label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>791</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>798</width>
+           <height>56</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Fira Code SemiBold</family>
+           <pointsize>12</pointsize>
+           <weight>7</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+color: rgb(205, 246, 255);
+font: 63 12pt &quot;Fira Code SemiBold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>tip: left click to draw and right click to recognize text</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="20">
+        <widget class="QFrame" name="view_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>969</width>
+           <height>573</height>
+          </size>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QScrollBar{
+background: rgb(0, 170, 255);
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="15">
         <widget class="QPushButton" name="save_button">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -373,99 +371,6 @@ background:qradialgradient(spread:repeat, cx:1, cy:0, radius:1.799, fx:0.624, fy
          </property>
         </widget>
        </item>
-       <item row="2" column="12">
-        <widget class="QPushButton" name="reset_button">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="toolTip">
-          <string>undo all operations</string>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-border-image: url(:/icons/reset_icon.png) 1 1 1 1;
-border-radius: 10px;
-background-color:qradialgradient(spread:repeat, cx:1, cy:0, radius:1.799, fx:0.624, fy:0.403, stop:0 rgba(0, 210, 255, 255), stop:0.642045 rgba(48, 59, 207, 255));
-}
-QPushButton:hover{
-background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 2, 102, 255), stop:1 rgba(0, 170, 255, 255));
-}
-QPushButton:pressed{
-background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 29, 90, 255), stop:1 rgba(0, 105, 158, 255));
-}</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="15">
-        <widget class="QPushButton" name="max_button">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Source Serif Pro SemiBold</family>
-           <pointsize>14</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::RightToLeft</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-border-radius: 10px;
-color: rgb(255, 191, 0);
-background-color: rgb(255, 191, 0);
-}
-QPushButton:hover{
-color:rgb(255, 191, 0);
-background-color:rgba(255, 191, 0, 150)
-}
-QPushButton:pressed{
-color:rgba(255, 191, 0, 55);
-background-color:rgba(255, 191, 0, 55);
-}
-</string>
-         </property>
-         <property name="text">
-          <string>¤</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="0">
         <widget class="QLabel" name="title_label">
          <property name="sizePolicy">
@@ -502,6 +407,65 @@ font: 63 18pt &quot;Fira Code SemiBold&quot;;</string>
          </property>
          <property name="text">
           <string>EasyScan</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="blue_marker">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Source Serif Pro SemiBold</family>
+           <pointsize>18</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>blue marker</string>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-radius: 15px;
+color: rgb(85, 170, 255);
+background-color: rgba(0, 170, 255,150);
+}
+QPushButton:hover{
+color:rgb(85, 170, 255);
+background-color:rgba(0, 170,255,200);
+}
+QPushButton:pressed{
+color:rgba(85, 170, 255, 55);
+background-color:rgba(0,170,200,50);
+}
+QPushButton[selected=true]{
+background-color:rgba(0, 170,200,200);
+border: 2px solid rgb(255, 134, 227);
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
        </item>
@@ -652,65 +616,6 @@ border-bottom-left-radius: 9px;
          </property>
         </widget>
        </item>
-       <item row="0" column="4">
-        <widget class="QPushButton" name="blue_marker">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>30</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Source Serif Pro SemiBold</family>
-           <pointsize>18</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="toolTip">
-          <string>blue marker</string>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::RightToLeft</enum>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-border-radius: 15px;
-color: rgb(85, 170, 255);
-background-color: rgba(0, 170, 255,150);
-}
-QPushButton:hover{
-color:rgb(85, 170, 255);
-background-color:rgba(0, 170,255,200);
-}
-QPushButton:pressed{
-color:rgba(85, 170, 255, 55);
-background-color:rgba(0,170,200,50);
-}
-QPushButton[selected=true]{
-background-color:rgba(0, 170,200,200);
-border: 2px solid rgb(255, 134, 227);
-}
-</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="7">
         <widget class="QPushButton" name="eraser_button">
          <property name="sizePolicy">
@@ -813,8 +718,49 @@ border: 2px solid rgb(255, 134, 227);
          </property>
         </widget>
        </item>
-       <item row="2" column="0" colspan="6">
-        <widget class="QLabel" name="title_label_2">
+       <item row="2" column="14">
+        <widget class="QPushButton" name="reset_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>undo all operations</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/icons/reset_icon.png) 1 1 1 1;
+border-radius: 10px;
+background-color:qradialgradient(spread:repeat, cx:1, cy:0, radius:1.799, fx:0.624, fy:0.403, stop:0 rgba(0, 210, 255, 255), stop:0.642045 rgba(48, 59, 207, 255));
+}
+QPushButton:hover{
+background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 2, 102, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QPushButton:pressed{
+background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 29, 90, 255), stop:1 rgba(0, 105, 158, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="18">
+        <widget class="QPushButton" name="back_button">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
            <horstretch>0</horstretch>
@@ -823,32 +769,86 @@ border: 2px solid rgb(255, 134, 227);
          </property>
          <property name="minimumSize">
           <size>
-           <width>791</width>
-           <height>21</height>
+           <width>20</width>
+           <height>20</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>798</width>
-           <height>56</height>
+           <width>20</width>
+           <height>20</height>
           </size>
          </property>
          <property name="font">
           <font>
-           <family>Fira Code SemiBold</family>
-           <pointsize>12</pointsize>
-           <weight>7</weight>
-           <italic>false</italic>
-           <bold>false</bold>
+           <family>Droid Sans Fallback</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
          <property name="styleSheet">
-          <string notr="true">background-color: none;
-color: rgb(205, 246, 255);
-font: 63 12pt &quot;Fira Code SemiBold&quot;;</string>
+          <string notr="true">QPushButton{
+border-radius: 10px;
+color: rgb(204,0,0);
+background-color: rgb(204, 0, 0);
+}
+QPushButton:hover{
+color:rgb(204, 0, 0);
+background-color:rgba(204, 0, 0, 150)
+}
+QPushButton:pressed{
+color: rgba(204, 0, 0, 55);
+background-color:rgba(204, 0, 0, 55)
+}
+</string>
          </property>
          <property name="text">
-          <string>tip: left click to draw and right click to recognize text</string>
+          <string>X</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="16">
+        <widget class="QPushButton" name="inpaint_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>press here to inpaint the marked area</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+border-image: url(:/icons/done_icon.png) 1 1 1 1;
+border-radius: 10px;
+background-color:qradialgradient(spread:repeat, cx:1, cy:0, radius:1.799, fx:0.624, fy:0.403, stop:0 rgba(0, 210, 255, 255), stop:0.642045 rgba(48, 59, 207, 255));
+}
+QPushButton:hover{
+background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 2, 102, 255), stop:1 rgba(0, 170, 255, 255));
+}
+QPushButton:pressed{
+background-color:qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 29, 90, 255), stop:1 rgba(0, 105, 158, 255));
+}</string>
+         </property>
+         <property name="text">
+          <string/>
          </property>
         </widget>
        </item>
