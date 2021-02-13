@@ -5,7 +5,7 @@
 <p>A python GUI digital whiteboard with handwriting recognition (OCR)
 </h3>
 
-*Digital Whiteboards* are quite common for conducting online meetings or teaching sessions. What if you digital whiteboard could understand what you are writing? Then, you would be able to save your whiteboard sessions as texts or convert it into a doc file. This may also come in handy to improve the understandibility of the handwriting. 
+*Digital Whiteboards* are quite common for conducting online meetings or teaching sessions. What if your digital whiteboard could understand what you are writing? Then, you would be able to save your whiteboard sessions as texts or convert it into a doc file. This may also come in handy to improve the understandibility of the handwriting. 
 
 <p align="center">
  <img alt="cover" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/cover.jpg" height="50%" width="50%">
