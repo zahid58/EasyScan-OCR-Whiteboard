@@ -1,5 +1,5 @@
 <h1 align="center">
-<p>EasyScan Whiteboard
+<p>EasyScan OCR Whiteboard
 </h1>
 <h3 align="center">
 <p>A python GUI digital whiteboard with handwriting recognition (OCR)
