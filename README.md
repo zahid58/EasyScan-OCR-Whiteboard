@@ -8,7 +8,7 @@
 *Digital Whiteboards* are quite common for conducting online meetings or teaching sessions. What if you digital whiteboard could understand what you are writing? Then, you would be able to save your whiteboard sessions as texts or convert it into a doc file. This may also come in handy to improve the understandibility of the handwriting. 
 
 <p align="center">
- <img alt="cover" src="https://github.com/Zedd1558/Image-Inpainter/blob/master/demo/cover.jpg" height="50%" width="50%">
+ <img alt="cover" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/cover.jpg" height="50%" width="50%">
 </p>
 
 
@@ -21,7 +21,7 @@ As Tesseract is an open-source basic OCR engine the recognition ability is very 
 <p>let's see an exmaple
 </h4>
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/Image-Inpainter/blob/master/demo/editpage.jpg">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo1.jpg">
 </p>
 <h4 align="center">
 <p>recognized correctly for this example!
@@ -36,7 +36,7 @@ open up console in the project directory and enter this
 python inpainter.py
 ```
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/Image-Inpainter/blob/master/demo/inpaint_demo2.gif">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.jpg">
 </p>
 
 
