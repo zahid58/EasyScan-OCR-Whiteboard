@@ -36,7 +36,7 @@ open up console in the project directory and enter this
 python main.py
 ```
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.jpg">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.gif">
 </p>
 
 
