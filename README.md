@@ -21,7 +21,7 @@ As Tesseract is an open-source basic OCR engine the recognition ability is very 
 <p>let's see an exmaple
 </h4>
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo1.jpg">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/editpage.jpg">
 </p>
 <h4 align="center">
 <p>recognized correctly for this example!
