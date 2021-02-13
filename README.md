@@ -15,7 +15,7 @@
 ### Implementation
 The frontend GUI is developed using PyQt. The backend OCR operations are done using *PyTesseract* library. That means, you need to have Tesseract OCR installed in your computer. 
 
-As Tesseract is an open-source basic OCR engine the recognition ability is very limited i.e. OCR makes a lot of mistakes. Better OCR can be incorporated by changing *recognizeText()* function of *editor.py*
+Text Recognition Performance is very limited i.e. OCR makes a lot of mistakes which may improve a lot by using a graphics tablet for writing. Better OCR engines or pipelines can be incorporated by changing *recognizeText()* function of *editor.py*
 
 <h4 align="center">
 <p>let's see an exmaple
