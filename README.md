@@ -33,7 +33,7 @@ PyQt, Numpy, OpenCV3, PyTesseract
 ### How to run
 open up console in the project directory and enter this 
 ```
-python inpainter.py
+python main.py
 ```
 <p align="center">
  <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.jpg">
