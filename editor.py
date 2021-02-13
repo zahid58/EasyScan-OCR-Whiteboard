@@ -39,7 +39,7 @@ class Editor(QtWidgets.QGraphicsView):
         self.color_index = {"red":0, "green":1, "blue":2}
         self.x  = 0
         self.y = 0
-
+        self.allText = ""
         self._method = "Sentence"
         self._mask = None
         self._current_image = None
@@ -218,7 +218,8 @@ class Editor(QtWidgets.QGraphicsView):
             text = text[:-2]
             
             print("Converted Text\n--------------\n",text)
-
+            self.allText = self.allText + " " + text
+             
             cv2.putText(img, text, (x,y), fontFace=cv2.FONT_HERSHEY_SIMPLEX,fontScale=2, color = (10,110,10), thickness=4)
             # qp = QPainter (self._mask)
             # if not qp.isActive():
@@ -253,11 +254,16 @@ class Editor(QtWidgets.QGraphicsView):
 
     def save(self):
         try:
-            image_path, _ = QFileDialog.getSaveFileName() 
+            # image_path, _ = QFileDialog.getSaveFileName() 
             img = self._photo.pixmap().toImage()
-            if not image_path.endswith(".png"):
-                image_path += ".png"
+            # if not image_path.endswith(".png"):
+            #     image_path += ".png"
+            image_path = "session.png"
             img.save(image_path, "PNG")
+            fp = open("Text.txt", "a+")
+            fp.write(self.allText+"\n")
+            fp.close()
+            self.allText=""
         except:
             pass
 
