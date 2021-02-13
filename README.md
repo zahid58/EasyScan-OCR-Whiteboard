@@ -21,7 +21,7 @@ As Tesseract is an open-source basic OCR engine the recognition ability is very 
 <p>let's see an exmaple
 </h4>
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo1.jpg">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/editpage.jpg" height="50%" width="50%">
 </p>
 <h4 align="center">
 <p>recognized correctly for this example!
@@ -33,10 +33,10 @@ PyQt, Numpy, OpenCV3, PyTesseract
 ### How to run
 open up console in the project directory and enter this 
 ```
-python inpainter.py
+python main.py
 ```
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.jpg">
+ <img alt="editing" src="https://github.com/Zedd1558/EasyScan-OCR-Whiteboard/blob/master/demo/demo3.gif">
 </p>
 
 
